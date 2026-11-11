@@ -22,13 +22,13 @@ fbq('track', 'PageView');
 // --- Advanced Multi-Button WhatsApp Tracking ---
 document.addEventListener("DOMContentLoaded", function() {
     var links = document.getElementsByTagName("a");
-    for (var i = 0; i < links.length; i++) {
-        if (links[i].textContent.includes("Contact Us On WhatsApp")) {
-            links[i].addEventListener("click", function() {
-                fbq('track', 'Lead');
-            });
-        }
-    }
+    for (var i = 0; i < links.length; i++) 
+                        if (links[i].textContent.includes("CONTACT US ON WHATSAPP")) {
+                            links[i].addEventListener("click", function() {
+                                fbq('track', 'Lead');
+                            });
+                        }
+                    }
 });
 </script>
 <noscript><img height="1" width="1" style="display:none"
